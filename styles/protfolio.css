@@ -1,0 +1,140 @@
+/* 반응형 대비 최소제한 너비 설정 */
+header, main {min-width: 900px;}
+/* header */
+header {
+    position: fixed; left: 0; top: 0; width: 100%; z-index: 999;
+    padding: 39px 60px 0 60px;
+}
+header nav {
+    border-top: 1px solid #808080;
+    border-bottom: 5px solid #808080;
+    padding: 13px 0 19px;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+header nav .gnb {}
+header nav .gnb a {
+    font-size: 1.777rem;
+    margin-right: 30px;
+}
+header nav .gnb a:hover {color: #ff5eb5;}
+header nav .sns {}
+header nav .sns p {font-size: 1.777rem;}
+/* main */
+main {}
+main #home {
+    background: #FFF3DB;
+    height: 100vh;
+    text-align: center;
+}
+main #home h1 {padding-top: 206px;}
+main #home h1 img {}
+main #home .mouse {padding-top: 168px;}
+main #home .mouse img {
+    animation: mouse_move 1s linear alternate infinite;
+}
+@keyframes mouse_move {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-30px);}
+}
+/* skill */
+main #skill {}
+main #skill h1 {
+    font-weight: 700;
+    font-size: 3.750rem;
+    border-bottom: 1px solid #ff5eb5;
+    margin: 84px 0 0 94px;
+    padding-bottom: 26.5px;
+}
+main #skill .container {
+    width: 1274px;
+    /* 스킬 9개 수직 줄바꿈으로 배치하는 flex */
+    display: flex; flex-flow: column wrap;
+    align-content: space-between;
+    height: 730px;
+    margin-top: 78.5px;
+}
+main #skill .container li {
+    width: 50%; /* display영향 */
+    /* 아이콘, 글자 옆으로 배치하는 flex */
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 30px; padding-bottom: 30px;
+}
+main #skill .container li .icon {width: 85px;}
+main #skill .container li .icon img {}
+main #skill .container li .contents {
+    width: calc(100% - 85px);
+    font-weight: 500; font-size: 1.375rem; line-height: 32px;
+}
+/* profile */
+main #profile {}
+main #profile h1 {
+    text-align: center; padding: 84px 0 109px;
+}
+main #profile h1 img {}
+/* container */
+main #profile .container {
+    margin: 0 80 px 0 86px;
+    display: flex; flex-flow: row nowrap;
+    position: relative;
+}
+main #profile .conatiner .contents_photo {
+    width: 348px; height: 348px; 
+}
+main #profile .container .contents_photo img {margin-top: 28px;}
+main #profile .container .contents {
+    margin-left: 30px;
+}
+main #profile .container .contents dl {}
+main #profile .container .contents dl dt {
+    font-size: 1.875rem; line-height: 45px; font-weight: 500;
+}
+main #profile .container .contents dl dd {
+    font-size: 1.875rem; line-height: 45px;
+}
+/* dd의 마지막 모음 */
+main #profile .container .contents dl .my_last,
+main #profile .container .contents dl .hobby_last,
+main #profile .container .contents dl .career_last,
+main #profile .container .contents dl .license_last {margin-bottom: 60px;}
+
+main #profile .container .contents_icon {}
+main #profile .container .contents_icon .coloring {
+    position: absolute; top: 167px; right: 271px;
+}
+main #profile .container .contents_icon .movie {
+    position: absolute; top: 112px; right: 126px;
+}
+main #profile .container .contents_icon .diary {
+    position: absolute; top: 286px; right: 107px;
+}
+/* project */
+main #project_web1 {}
+main #project_web1 h1 {
+    font-weight: 700; font-size: 3.750rem;
+    margin: 47px 0 0 94px;
+}
+main #project_web1 h1 em {
+    font-weight: 700; font-size: 3.750rem; color: #ff5eb5;
+}
+main #project_web1 .link {
+    width: 1135px; height: 72px;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 40px; margin-bottom: 35px;
+}
+main #project_web1 .link a {
+    font-weight: 500; font-size: 1.875rem; color: #fff;
+    background: #000; border-radius: 10px; padding: 20px 20px;
+}
+main #project_web1 .link a:last-child {
+    background: #ff5eb5; border-radius: 10px; padding: 20px 20px;
+}
+main #project_web1 .project_info {}
+main #project_web1 .project_info p {
+    font-size: 1.688rem; line-height: 40px;
+}
+main #project_web1 .preview {}
+main #project_web1 .preview img {
+    width: 1093px; height: 571px;
+}
