@@ -1,3 +1,4 @@
+body, html {scroll-behavior: smooth;}
 /* 반응형 대비 최소제한 너비 설정 */
 header, main {min-width: 900px;}
 /* header */
@@ -39,13 +40,15 @@ main #home .mouse img {
 /* skill */
 main #skill {}
 main #skill h1 {
+    width: calc(100 - 90px);
     font-weight: 700;
     font-size: 3.750rem;
     border-bottom: 1px solid #ff5eb5;
-    margin: 84px 0 0 94px;
+    margin: 84px 90px 78.5px 94px;
     padding-bottom: 26.5px;
 }
 main #skill .container {
+    background: violet;
     width: 1274px;
     /* 스킬 9개 수직 줄바꿈으로 배치하는 flex */
     display: flex; flex-flow: column wrap;
@@ -132,9 +135,12 @@ main #project_web1 .link a:last-child {
 }
 main #project_web1 .project_info {}
 main #project_web1 .project_info p {
+    width: 1055px; 
     font-size: 1.688rem; line-height: 40px;
+    margin: 0 auto; margin-bottom: 34px;
 }
-main #project_web1 .preview {}
-main #project_web1 .preview img {
+main #project_web1 .preview {
+    margin: 0 auto; 
     width: 1093px; height: 571px;
 }
+main #project_web1 .preview img {}
